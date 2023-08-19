@@ -471,22 +471,24 @@
         </div>
 
         <div class="box-textarea">
-          <label class="label-modal" for="comment">Comment</label>
-          <textarea class="form-textarea" name="comment" rows="8" id="comment" placeholder="Text input"
+          <label class="label-modal" for="user-comment">Comment</label>
+          <textarea class="form-textarea" name="user-comment" rows="8" id="user-comment" placeholder="Text input"
             required></textarea>
         </div>
-        
-        <label class="checkbox-privacy" for="checkbox-name">
-          <input class="checkbox-input visually-hidden" name="checkbox-name" type="checkbox" id="checkbox-name">
-          <span class="checkbox-vector">
-            <svg class="svg-vector" width="10" height="8">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-          </span>
-          <span class="text-privacy">I accept the terms and conditions of the
-            <a class="privacy-policy" href="" target="_blank" rel="noopene no-referrer">Privacy Policy</a>
-          </span>
-        </label>
+
+        <div class="box-checkbox">
+            <input class="checkbox-input visually-hidden" name="checkbox-name" type="checkbox" id="user-privacy">
+            <label class="checkbox-privacy" for="checkbox-name">
+            <span class="checkbox-vector">
+              <svg class="svg-vector" width="10" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            <span class="text-privacy">I accept the terms and conditions of the
+              <a class="privacy-policy" href="" target="_blank" rel="noopene no-referrer">Privacy Policy</a>
+            </span>
+          </label>
+        </div>
         <div class="box-btn">
           <button class="btn-modal" type="submit">
             <span class="text-btn">Send</span>

@@ -813,6 +813,9 @@ input::placeholder {
   transition: fill var(--animation);
   fill: #2E2F42;
 }
+.svg-vector {
+  height: 24px;
+}
 .form-input:focus + .svg-name {
   fill: var(--iris);
 }
@@ -820,28 +823,38 @@ input::placeholder {
 .form-textarea:focus {
   border-color: var(--iris);
 }
+.box-textarea {
+    margin-bottom: 16px;
+}
+
   .form-textarea {
   width: 360px;
   height: 120px;
-  margin-bottom: 16px;
-  padding-left: 16px;
-  color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.4);  
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   resize: none;
   border-radius: 4px;
-  outline: none;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);  
   transition: border-color var(--animation);
 }
 
 
 /* Checkbox */
 
-
+.box-checkbox {
+    margin-bottom: 24px;
+}
 .checkbox-privacy {
-  
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: var(--lightslate);
 }
 
 .checkbox-input {}
@@ -853,22 +866,26 @@ input::placeholder {
   width: 16px;
   height: 16px;
   fill: transparent;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  border: 1px solid rgba(46, 47, 66, 0.4);  
   border-radius: 2px;
   margin-right: 8px;
   margin-bottom: 24px;
-  transition: border-color var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
   cursor: pointer;
 }
-input[type="checkbox"]:checked + .checkbox-vector {
-  fill: white;
-  background-color: var(--ocean);
-  border-color: var(--ocean);
+.svg-vector {
+  width: 10px;
+  height: 8px;
 }
-.svg-vector {}
+input[type="checkbox"]:checked + .checkbox-vector {
+  fill: var(--cloud);
+  border: none;
+  background-color: var(--ocean);
+}
 
 .text-privacy {
-  color: var(--lightslate, #8E8F99);
   font-size: 16px;
   font-size: 12px;
   line-height: 1.17;
@@ -877,9 +894,6 @@ input[type="checkbox"]:checked + .checkbox-vector {
 }
 .privacy-policy {
   color: var(--iris, #4D5AE5);
-  font-size: 12px;
-  line-height: 1.3;
-  letter-spacing: 0.04em;
   text-decoration-line: underline;
 }
 
