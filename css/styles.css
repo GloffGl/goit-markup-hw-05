@@ -626,7 +626,10 @@ ol {
 }
 /* Form footer */
 .form-footer {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;  
   margin-left: 80px;
 }
 .label-name {
@@ -634,18 +637,12 @@ ol {
  font-weight: 500;
  line-height: 1.5;
  letter-spacing: 0.02em;
+ margin-left: 80px;
  margin-bottom: 16px;
 }
-.box-email-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
+
+
 .form-input-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-left: 16px;
   width: 264px;
   height: 40px;
@@ -715,6 +712,7 @@ input::placeholder {
   background: var(--dairy, #FCFCFC);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform var(--animation);
+  padding: 72px 24px 24px 24px; 
 
 }
  .modal-btn {
@@ -755,10 +753,7 @@ input::placeholder {
 
 /* Modal form */
 
-.label-box {
-  width: 360px;
-  margin-left: 24px;
-}
+
 
 .modal-name {
   color: var(--navyblue, #2E2F42);
@@ -766,7 +761,7 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 72px;
+  margin: 0 auto;
   margin-bottom: 16px;
 }
 
