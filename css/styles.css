@@ -674,9 +674,13 @@ input::placeholder {
 .btn-telegram {
   display: flex;
   justify-content: center;
+  min-width: 165px;
   align-items: center;
   padding: 8px 24px;
   border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background: var(--iris, #4D5AE5);
   border: inherit;
   color: var(--white);
@@ -769,6 +773,10 @@ input::placeholder {
   margin-bottom: 16px;
 }
 
+.form-box {
+  margin-bottom: 8px;
+}
+
 .label-modal {
   color: var(--lightslate, #8E8F99);
   font-size: 12px;
@@ -779,7 +787,6 @@ input::placeholder {
 
 .svg-box {
   position: relative;
-  margin-bottom: 8px;
 
 }
 
