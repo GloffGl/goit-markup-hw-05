@@ -647,11 +647,15 @@ ol {
   width: 264px;
   height: 40px;
   outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white);
   border-radius: 4px;
   border: 1px solid var(--white, #FFF);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: var(--navyblue);
+  background-color: transparent;
   transition: box-shadow var(--animation);
 }
 .form-input-footer:hover,
@@ -663,7 +667,7 @@ input::placeholder {
   color: var(--white,);
   font-size: 12px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 
