@@ -875,13 +875,6 @@ input[type="checkbox"]:checked + .checkbox-privacy > .checkbox-vector {
   border: none;
   background-color: var(--ocean);
 }
-.text-privacy {
-  font-size: 16px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-    
-}
 .privacy-policy {
   color: var(--iris);
   text-decoration-line: underline;
